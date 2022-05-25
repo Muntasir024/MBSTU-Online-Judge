@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class problem_005fset_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("    <head>\n");
+      out.write("        \n");
+      out.write("        <meta charset=\"utf-8\">\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"bootstrap.min.css\">\n");
+      out.write("        <script src=\"jquery-3.4.1.min.js\"></script>\n");
+      out.write("        <script src=\"bootstrap.min.js\"></script>\n");
+      out.write("        \n");
+      out.write("        <link rel=\"stylesheet\" href=\"datatables.min.css\">\n");
+      out.write(" \n");
+      out.write("        <script src=\"datatables.min.js\"></script>\n");
+      out.write("\n");
+      out.write("<script type=\"text/javascript\" >\n");
+      out.write("    $(document).ready(function(){\n");
+      out.write("        $('#example').dataTable();\n");
+      out.write("    });\n");
+      out.write("    </script>\n");
+      out.write("\n");
+      out.write("        \n");
+      out.write("        <style>\n");
+      out.write("         body{\n");
+      out.write("                background:#f0f0f0;\n");
+      out.write("                /* fallback for old browsers */\n");
+      out.write("                background: -webkit-linear-gradient(to top, #f0f0f0, #ccccff);\n");
+      out.write("                background: -moz-linear-gradient(to top, #f0f0f0, #ccccff);\n");
+      out.write("                background: -o-linear-gradient(to top, #f0f0f0, #ccccff);\n");
+      out.write("                background: linear-gradient(to top, #f0f0f0, #ccccff);\n");
+      out.write("                background-size: cover;\n");
+      out.write("                background-attachment: fixed;\n");
+      out.write("                font-family: 'Roboto', sans-serif;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .container-fluid{\n");
+      out.write("                font-size: 15px;\n");
+      out.write("\n");
+      out.write("                background-color:darkslategray;\n");
+      out.write("            }\n");
+      out.write("            .container tr th{\n");
+      out.write("                font-size: 20px;\n");
+      out.write("            }\n");
+      out.write("            .container tr td{\n");
+      out.write("                font-size: 20px;\n");
+      out.write("            }\n");
+      out.write("            .container tr:hover{\n");
+      out.write("                background-color:cornsilk;\n");
+      out.write("            }\n");
+      out.write("            .content h3{\n");
+      out.write("                font-style:oblique;\n");
+      out.write("                font-family:cursive;\n");
+      out.write("                font-size: 30px;\n");
+      out.write("                text-align: center;     \n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("       \n");
+      out.write("        <nav class=\"navbar navbar-inverse\">\n");
+      out.write("            <div class=\"container-fluid\">\n");
+      out.write("                <div class=\"navbar-header\">\n");
+      out.write("                    <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\n");
+      out.write("                        <span class=\"icon-bar\"></span>\n");
+      out.write("                        <span class=\"icon-bar\"></span>\n");
+      out.write("                        <span class=\"icon-bar\"></span>                        \n");
+      out.write("                    </button>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\n");
+      out.write("                    <ul class=\"nav navbar-nav\">\n");
+      out.write("                        <li><a href=\"homepage.jsp\">Home</a></li>\n");
+      out.write("                        <li><a href=\"#\">Problem Set</a></li>\n");
+      out.write("                    </ul>    \n");
+      out.write("                     <ul class=\"nav navbar-nav navbar-right\">\n");
+      out.write("                       \n");
+      out.write("                        <li><a href=\"logout.jsp\">Log Out</a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </nav>\n");
+      out.write("        <div class=\"j\">\n");
+      out.write("            <div class=\"container text-center\">\n");
+      out.write("                <div class=\"content\">\n");
+      out.write("                    <p align =\"center\">\n");
+      out.write("                        <img src=\"logo_large.jpg\" class=\"img-rounded\" alt=\"Logo_large\" width=\"100\" height=\"100\">\n");
+      out.write("\n");
+      out.write("                    </p>\n");
+      out.write("                    <h3>MBSTU ONLINE JUDGE</h3>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div><br>\n");
+      out.write("    \n");
+      out.write("<div class=\"col-sm-3\">\n");
+      out.write("</div>\n");
+      out.write("        \n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <div class=\"col-sm-9\">\n");
+      out.write("\n");
+      out.write("<form action=\"InsertQuestion\" method=\"post\">\n");
+      out.write("        <table id=\"example\" class=\"table table-striped table-bordered \" style=\"width:100%\">\n");
+      out.write("        <thead>\n");
+      out.write("            <tr>\n");
+      out.write("                <td>Serial no</td>\n");
+      out.write("                <td>Name</td>\n");
+      out.write("            </tr>\n");
+      out.write("        </thead>\n");
+      out.write("        <tbody>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1001\"></a></td>\n");
+      out.write("                \n");
+      out.write("                <td>Score Validation</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1002\"></td>\n");
+      out.write("                <td>Area of a Circle</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1003\"></td>\n");
+      out.write("                <td>Difference</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1004\"></td>\n");
+      out.write("                <td>Salary</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1005\"></td>\n");
+      out.write("                <td>Simple Calculate</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1006\"></td>\n");
+      out.write("                <td>Distance Between Two Points</td>\n");
+      out.write("            </tr>\n");
+      out.write("            \n");
+      out.write("           <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1007\"></td>\n");
+      out.write("                <td>Time Conversion</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1008\"></td>\n");
+      out.write("                <td>Interval</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1009\"></td>\n");
+      out.write("                <td>Snack</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1010\"></td>\n");
+      out.write("                <td>Game Time</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10011\"></a></td>\n");
+      out.write("                \n");
+      out.write("                <td>Score Validation</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10012\"></td>\n");
+      out.write("                <td>Area of a Circle</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10013\"></td>\n");
+      out.write("                <td>Difference</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10014\"></td>\n");
+      out.write("                <td>Salary</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10015\"></td>\n");
+      out.write("                <td>Simple Calculate</td>\n");
+      out.write("                \n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10016\"></td>\n");
+      out.write("                <td>Distance Between Two Points</td>\n");
+      out.write("            </tr>\n");
+      out.write("            \n");
+      out.write("           <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10017\"></td>\n");
+      out.write("                <td>Time Conversion</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10018\"></td>\n");
+      out.write("                <td>Interval</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"10019\"></td>\n");
+      out.write("                <td>Snack</td>\n");
+      out.write("            </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <td><input type=\"submit\" name=\"number1\" value=\"1020\"></td>\n");
+      out.write("                <td>Game Time</td>\n");
+      out.write("            </tr>\n");
+      out.write("           \n");
+      out.write("        </tbody>\n");
+      out.write("       \n");
+      out.write("    </table>\n");
+      out.write("        <script>\n");
+      out.write("            $(document).ready(function() {\n");
+      out.write("    $('#example').DataTable();\n");
+      out.write("} );\n");
+      out.write("            </script>\n");
+      out.write("        </form>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("      \n");
+      out.write("    </body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 25, 2019 9:05:11 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypack.Student" table="student" catalog="ustudent" optimistic-lock="version">
+        <id name="serialNo" type="java.lang.Integer">
+            <column name="serial_no" />
+            <generator class="identity" />
+        </id>
+        <property name="uname" type="string">
+            <column name="uname" length="100" />
+        </property>
+        <property name="mail" type="string">
+            <column name="mail" length="100" />
+        </property>
+        <property name="upassword" type="string">
+            <column name="upassword" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
